@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class BlackJack {
 
+    private static Object Scanner;
     //********** VARIABLES ************//
     //1.1 Initialize a new deck(Deck)
     Deck deck = new Deck();
@@ -14,6 +15,10 @@ public class BlackJack {
     static int playerMoney = 0;
     //1.4 Initialize a new dealer(Hand)
     Hand dealer = new Hand();
+
+    Scanner scanner = new Scanner(System.in);
+
+
 
     public static void main(String[] args) {
 
@@ -58,10 +63,13 @@ public class BlackJack {
         //3.1 How much money do you wanna bet?
         while(true) {
             System.out.println("How much money do you want to bet?");
+
+            Scanner = new Scanner(System.in);
+
             break;
         }
             //3.2 Player puts in the amount
-        
+
             //3.3 Dealer gives player two cards
             //turn one of the cards face up
             //3.4 Dealer gives itself two cards
